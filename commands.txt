@@ -1,0 +1,6 @@
+// GENERATE TypeScript code from Proto file
+protoc --plugin=protoc-gen-ts_proto=".\node_modules\.bin\protoc-gen-ts_proto.cmd" --ts_proto_out=./ --ts_proto_opt=nestJs=true ./proto/auth.proto
+
+// generate apps folder (useful for microservices) and a new class
+nest g app <class name>
+
