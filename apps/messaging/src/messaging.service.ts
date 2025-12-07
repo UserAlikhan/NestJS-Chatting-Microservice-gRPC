@@ -13,7 +13,7 @@ export class MessagingService {
   // one-direction method for sending a new message
   sendMessage(roomId: string, message: Message): Empty {
     // create new a message storage for provided roomId if does not exist
-    if (!this.messagesStorage.has(roomId)) {
+    if (!this.messagesStorage.has(roomId)) { 
       this.messagesStorage.set(roomId, []);
     }
     // store new message in the storage
